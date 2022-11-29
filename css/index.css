@@ -1,0 +1,80 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        font-family:  monospace, sans-serif;
+}
+
+.container {
+        width: 400px;
+        padding: 20px;
+        margin: 10px auto;
+        background-color: black;
+        border-radius: 10px;
+}
+
+.buttons {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(4, 100px);
+}
+
+.buttons > button {
+        cursor: pointer;
+        font-size: 50px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: #3e5c76;
+        color: #fff;
+}
+
+.output {
+        background-color: #52b788;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+}
+
+.output .display {
+        width: 370px;
+        height: 95px;
+        font-size: 100px;
+        font-family: monospace sans-serif;
+        text-align: right;
+        border: none;
+        outline: none;
+        background-color: #52b788;
+        color: #000;
+}
+
+.delete {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-right: 10px;
+        margin: 5px 0;
+        color: #fff;
+}
+.delete > button {
+        width: 95px;
+        cursor: pointer;
+        font-size: 50px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: #a10220;
+}
+.delete > button:hover {
+        background-color: #b23a48;
+}
+.buttons > button:hover {
+        background-color: #747cab;
+}
